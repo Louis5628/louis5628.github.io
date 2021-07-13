@@ -1,0 +1,954 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formula 1 one page website</title>
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+
+        body {
+            margin: 0;
+        }
+
+        html {
+            scroll-behavior: smooth;
+        }
+
+
+        main {
+            width: 100%;
+            /* height: 10000px; */
+            background-color: rgb(21, 21, 31);
+        }
+
+        .container {
+            width: 80%;
+            height: 100%;
+            /* height: 100vh;
+            height: 500px; */
+            /* background-color: rgb(21, 21, 31);  */
+            margin: auto;
+
+        }
+
+
+        /*  */
+
+        .nav-bar {
+            width: 100%;
+            height: 80px;
+            background-color: rgb(21, 21, 31);
+            display: flex;
+            justify-content: center;
+        }
+
+
+
+        .logo {
+            width: 150px;
+            height: 80px;
+            background-image: url(https://wallpaperaccess.com/full/2180256.png);
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+
+        }
+
+
+        .banner {
+            width: 100%;
+            height: calc(100vh - 140px);
+            background-image: url(/img/F1/Netflix-Drive-to-Survive-driver-pic.jpg);
+
+            background-size: cover;
+            background-position: 50% 70%;
+            background-repeat: no-repeat;
+        }
+
+        .links {
+            width: 100%;
+            height: 60px;
+            background-color: rgb(21, 21, 31);
+            ;
+
+
+        }
+
+        .links .container {
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+        }
+
+
+        a {
+            width: 200px;
+            line-height: 60px;
+            background-color: red;
+            color: white;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 32px;
+            text-decoration: none;
+
+        }
+
+
+
+        .team {
+            width: 100%;
+            height: 100vh;
+            /* height: 100vh; */
+            background-color: rgb(21, 21, 31);
+            padding: 150px 0;
+            /* position: relative;
+            z-index: 1; */
+        }
+
+        .team .container {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            position: relative;
+        }
+
+        .team #link-ankor-1 {
+            position: absolute;
+            top: 0;
+            left: 0;
+        }
+
+        .team-pic {
+            width: 50%;
+            height: 50%;
+            /* height: 800px; */
+            background-image: url(https://i.ytimg.com/vi/dY5PidFhLwg/maxresdefault.jpg);
+            background-size: 100%;
+            background-position: center;
+            background-repeat: no-repeat;
+        }
+
+
+        .team-title {
+            width: 45%;
+            height: 50%;
+            /* width: 500px; */
+            font-size: 60px;
+            font-weight: bold;
+            color: red;
+            margin: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+        }
+
+        .team-text {
+            /* width: 100%; */
+            font-size: 24px;
+            color: white;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        /*         
+        .cars .container {
+            background-color: red; 
+            height: calc(100% + 500px);
+                
+        } */
+
+
+        .cars {
+            width: 100%;
+            /* height: 1000px; */
+            /* height: 100vh; */
+            display: flex;
+            justify-content: space-between;
+            background-color: rgb(21, 21, 31);
+        }
+
+
+        .cars #link-ankor-2 {
+            position: absolute;
+            top: 0;
+            left: 0;
+        }
+
+        .car-image {
+            width: 33%;
+            height: 100%;
+            /* float: left;
+            text-align: center;
+            position: relative; */
+            /* padding: 50px 0;
+            position: relative; */
+        }
+
+
+
+
+        .f1-car-1 {
+            width: 100%;
+            height: 100%;
+            /* height: 1000px; */
+            background-color: silver;
+            padding: 50px 0;
+            /* position: relative; */
+        }
+
+        .f1-car-1 .f1-car-pic {
+            /* width: 100%;
+            height: 60%; */
+            width: 100%;
+            height: 500px;
+
+            background-image: url(/img/F1/Red\ bull\ front\ view-1.JPG);
+            background-repeat: no-repeat;
+            background-size: 100%;
+            background-position: center;
+        }
+
+        .f1-car-2 {
+            width: 100%;
+            height: 100%;
+            /* height: 1000px; */
+            background-color: gold;
+            padding: 50px 0;
+            margin: 0 10px;
+
+        }
+
+        .f1-car-2 .f1-car-pic {
+            width: 100%;
+            height: 500px;
+
+            /* width: 100%;
+            height: 50%; */
+
+            background-image: url(/img/F1/Mercedes\ front\ view-1.JPG);
+            background-repeat: no-repeat;
+            background-size: 100%;
+            background-position: center;
+        }
+
+
+        .f1-car-3 {
+            width: 100%;
+            height: 100%;
+            /* height: 1000px; */
+            background-color: rgb(186, 110, 64);
+            padding: 50px 0;
+
+        }
+
+        .f1-car-3 .f1-car-pic {
+            /* width: 100%;
+            height: 80%; */
+
+            width: 100%;
+            height: 500px;
+          
+            background-image: url(/img/F1/Mclaren\ front\ view-2.JPG);
+            background-repeat: no-repeat;
+            background-size: 130%;
+            background-position: center;
+
+        }
+
+
+        .f1-car-pic:hover {
+            background-size: 500%;
+            opacity: 0.5;
+            transition: 2s;
+            cursor: pointer;
+        }
+
+
+        .f1-car-text {
+            background-color: black;
+            width: 100%;
+            /* height: 20%; */
+            color: white;
+
+
+        }
+
+        .f1-car-text ul {
+            margin: 0;
+            margin-left: 20px;
+            padding: 0 10px;
+        }
+
+        .f1-car-1 h1,
+        .f1-car-1 h2 {
+            color: silver;
+            text-align: center;
+        }
+
+
+        .f1-car-2 h1,
+        .f1-car-2 h2 {
+            color: gold;
+            text-align: center;
+        }
+
+        .f1-car-3 h1,
+        .f1-car-3 h2 {
+            color: rgb(186, 110, 64);
+            text-align: center;
+        }
+
+
+        .f1-car-text h1,
+        h2 {
+            margin: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+
+        }
+
+
+
+
+        /* .f1-number {
+            width: 100%;
+            height: 100%;
+            position: absolute;
+            top: 0;
+            left: 0;
+            font-size: 72px;
+            font-weight: bold;
+            line-height: 500px;
+            opacity: 0;
+
+        }
+
+
+        .f1-number:hover{
+            font-size: 104px;
+            color: black;
+            opacity: 1;
+            transition: 2s;
+        } */
+
+
+
+        /* .driver .container {
+
+            height: 700px;
+            background-color: hotpink;
+        } */
+
+        .driver {
+            width: 100%;
+            /* height: 100vh; */
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+
+        }
+
+        .driver #link-ankor-2 {
+            position: absolute;
+            top: 0;
+            left: 0;
+        }
+
+
+        .f1-driver-1 {
+            /* width: calc(50% - 10px); */
+            width: 100%;
+            /* height: 100%; */
+            /* height: 100vh; */
+            height: 50%;
+            background-color: rgb(21, 21, 31);
+            /* float: left; */
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            /* margin-right: 20px; */
+            padding: 50px 0;
+        }
+
+        .f1-driver-1 .f1-driver-pic {
+            width: 100%;
+            height: 500px;
+            /* height: 50%; */
+            background-image: url(https://www.formula1.com/content/fom-website/en/drivers/lewis-hamilton/_jcr_content/image.img.1920.medium.jpg/1616676634721.jpg);
+            background-repeat: no-repeat;
+            background-size: cover;
+            background-position: top;
+
+        }
+
+        .f1-driver-1 .f1-driver-pic:hover {
+            background-image: url(https://imageresizer.static9.net.au/ncocSVFD2t7AOr7dyNgRnA9uKvc=/0x0/https%3A%2F%2Fprod.static9.net.au%2Ffs%2F48a0a816-020f-4829-980a-b39017a872ac);
+            background-repeat: no-repeat;
+            background-size: cover;
+            background-position: top;
+
+        }
+
+
+
+        .f1-driver-1 .f1-driver-text {
+            width: 100%;
+            /* height: 300px; */
+            height: 50%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            color: white;
+        }
+
+
+
+
+
+        .f1-driver-2 {
+            /* width: calc(50% - 10px); */
+            width: 100%;
+            height: 50%;
+            /* height: 100vh; */
+            background-color: rgb(21, 21, 31);
+            /* float: left;
+            display: flex;
+            flex-direction: column;
+            justify-content: flex-end; */
+
+            display: flex;
+            flex-direction: row-reverse;
+            justify-content: space-between;
+            align-items: center;
+
+            padding: 50px 0;
+        }
+
+        .f1-driver-2 .f1-driver-pic {
+            width: 100%;
+            height: 500px;
+            /* height: 50%; */
+            background-image: url(https://www.formula1.com/content/fom-website/en/drivers/valtteri-bottas/_jcr_content/image.img.1920.medium.jpg/1616676580165.jpg);
+            background-repeat: no-repeat;
+            background-size: cover;
+            background-position: top;
+        }
+
+        .f1-driver-2 .f1-driver-pic:hover {
+            background-image: url(https://motorsport-magazine.s3.eu-west-1.amazonaws.com/wp-content/uploads/2019/10/03021500/bottas_trophy.jpg);
+            background-repeat: no-repeat;
+            background-size: cover;
+            background-position: top;
+
+        }
+
+
+        .f1-driver-2 .f1-driver-text {
+            width: 100%;
+            /* height: 300px; */
+            height: 50%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            color: white;
+
+        }
+
+        .f1-driver-text h2 {
+            font-weight: bold;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+
+        .f1-driver-text li {
+            font-size: 18px;
+        }
+
+
+
+
+        .calendar {
+            width: 100%;
+            height: 100vh;
+            background-image: url(https://e2.365dm.com/20/11/2048x1152/skysports-f1-2021-calendar_5167688.png);
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            position: relative;
+
+        }
+
+        .calendar #link-ankor-4 {
+            position: absolute;
+            top: 0;
+            left: 0;
+        }
+
+
+
+        .parallax {
+            background-size: cover;
+            background-position: center;
+            background-attachment: fixed;
+        }
+
+
+
+        footer {
+            width: 100%;
+            /* height: 100px; */
+            background-color: chartreuse;
+
+        }
+
+        .footer-up {
+            width: 100%;
+            height: 80%;
+            background-color: black;
+            display: flex;
+            justify-content: space-between;
+            padding: 0px 30px;
+        }
+
+        .footer-left {
+            /* width: 40%; */
+            /* height: 100%; */
+            background-color: black;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+
+        }
+
+        .footer-icon {
+            width: 80px;
+            height: 80px;
+            margin-right: 20px;
+            background-color: black;
+        }
+
+        .footer-icon:hover {
+            cursor: pointer;
+        }
+
+        #line {
+            background-image: url(/img/F1/LINE-red.png);
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+        }
+
+
+        #FB {
+          
+            background-image: url(/img/F1/FB-red.png);
+            background-size: 100%;
+            background-color: black;
+            background-position: center;
+            background-repeat: no-repeat;
+        }
+
+
+        #IG {
+            
+            background-image: url(/img/F1/IG-red.png);
+            background-size: 110%;
+            background-position: center;
+            background-repeat: no-repeat;
+        }
+
+        /* #WE{
+            background-image: url(./圖片/WE-red.png);
+            background-size: 90%;
+            background-position:center;
+            background-repeat: no-repeat;
+        } */
+
+
+
+        .footer-right {
+            /* width: 20%; */
+            /* height: 100%; */
+            background-color: black;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+
+
+        }
+
+        .footer-right li {
+            list-style-type: none;
+            font-size: 18px;
+            color: white;
+
+        }
+
+
+        .footer-down {
+            width: 100%;
+            /* height: 20%; */
+            background-color: black;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+
+        }
+
+        .footer-down h4 {
+            margin: 0;
+            color: white;
+        }
+
+
+
+
+
+        @media(max-width:576px) {
+
+            .container {
+                width: 90%;
+            }
+
+            .team .container {
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+
+            }
+
+            .team-pic {
+                width: 400px;
+                height: 400px;
+            }
+
+            .team {
+                padding-top: 15px;
+
+            }
+
+            .team-title {
+                width: 100%;
+                height: 50%;
+            }
+
+
+            .cars {
+                display: flex;
+                flex-direction: column;
+
+            }
+
+
+            .f1-car-2 {
+                margin: 0;
+            }
+
+            /* .driver .container{
+            width: 80%;
+            height: 1000px;
+        } */
+
+            /* .driver .container {
+                width: 90%;
+                height: 1000px;
+            } */
+
+            .driver {
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+
+            }
+
+            .f1-driver-1 {
+                width: 100%;
+                /* height: 800px; */
+                margin: 0;
+                /* padding: 20px 0; */
+                padding: 0px;
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+            }
+
+            .f1-driver-1 .f1-driver-pic {
+
+                display: flex;
+                justify-content: center;
+                align-items: center;
+
+            }
+
+
+
+            .f1-driver-1 ul,
+            .f1-driver-2 ul {
+                /* margin-top: 60px; */
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+
+
+            }
+
+            .f1-driver-2 {
+                width: 100%;
+                /* height: 800px; */
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                /* margin-top: 15px; */
+                /* padding: 20px 0; */
+                padding: 0px;
+            }
+
+            .calendar {
+                /* background-position: 0% -30%; */
+                background-position: left;
+                background-size: 200%;
+                width: 100%;
+            }
+
+
+
+            .footer-icon {
+                width: 40px;
+                height: 40px;
+            }
+
+
+            .footer-right li {
+                font-size: 12px;
+            }
+
+        }
+    </style>
+
+
+
+</head>
+
+<body>
+
+    <nav>
+
+        <div class="nav-bar">
+            <div class="container">
+                <div class="logo"></div>
+                <div class="logo-name"></div>
+            </div>
+
+        </div>
+        </div>
+    </nav>
+
+    <main>
+
+        <div class="banner">
+            <div class="container"></div>
+        </div>
+
+        <div class="links">
+            <div class="container">
+                <a href="#link-ankor-1">車隊</a>
+                <a href="#link-ankor-2">賽車</a>
+                <a href="#link-ankor-3">車手</a>
+                <a href="#link-ankor-4">賽事</a>
+
+            </div>
+        </div>
+
+
+
+        <div class="team">
+            <div class="container">
+                <div id="link-ankor-1"></div>
+                <div class="team-pic"></div>
+                <div class="team-title">參賽車隊
+                    <div class="team-text">
+                        <ol>
+                            <li>梅賽德斯AMG馬石油賽車F1車隊</li>
+                            <li>紅牛車隊</li>
+                            <li>麥拉倫F1車隊</li>
+                            <li>奧斯頓·馬丁高知特F1車隊</li>
+                            <li>阿爾派F1車隊</li>
+                            <li>法拉利遴選任務車隊</li>
+                            <li>艾法托利本田車隊</li>
+                            <li>奧倫愛快羅密歐車隊</li>
+                            <li>烏拉爾卡利哈斯F1車隊</li>
+                            <li>威廉斯車隊</li>
+                        </ol>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+
+        <div class="container">
+            <div id="link-ankor-2"></div>
+            <div class="cars">
+                <div class="f1-car-1" class="car-image">
+                    <div class="f1-car-pic"></div>
+                    <!-- <div class="f1-number">2</div> -->
+                    <div class="f1-car-text">
+                        <ul>
+                            <h1>2020 F1 亞軍</h1>
+                            <h2>紅牛車隊</h2>
+                            <li>高度: 950 mm</li>
+                            <li>寬度: 2000 mm</li>
+                            <li>車重: 746 公斤</li>
+                            <li>車身編號: RB16</li>
+                            <li>引擎: Honda RA620e</li>
+                            <li>排氣量: 1600 cc</li>
+                            <li>車體結構: Red Bull碳纖維單體式蜂巢複合結構車身</li>
+                            <li>前懸吊系統: 鋁合金上座+碳纖維雙A臂結構+推桿式懸吊</li>
+                            <li>後懸吊系統: 鋁合金上座+碳纖維雙A臂結構+拉桿式懸吊</li>
+                            <li>輪圈: OZ Racing</li>
+                            <li>剎車卡鉗: Brembo</li>
+                            <li>電子系統: MESL標準電子控制單元</li>
+                            <li>變速箱: 8前速序列式變速箱</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="f1-car-2" class="car-image">
+                    <div class="f1-car-pic"></div>
+                    <div class="f1-car-text">
+                        <ul>
+                            <h1>2020 F1 冠軍(連續7年)</h1>
+                            <h2>梅賽德斯AMG馬石油賽車F1車隊</h2>
+                            <li>高度: 950 mm</li>
+                            <li>寬度: 2000 mm</li>
+                            <li>車重: 746 公斤</li>
+                            <li>車身編號: M11</li>
+                            <li>引擎: Mercedes-AMG F1 M11 EQ Performance</li>
+                            <li>排氣量: 1600 cc</li>
+                            <li>車體結構: 碳纖維單體式蜂巢式複合結構車身</li>
+                            <li>前懸吊系統: 碳纖維雙A臂結構+推桿式扭力彈簧</li>
+                            <li>後懸吊系統: 維雙A臂結構+拉桿式扭力彈簧</li>
+                            <li>輪圈: OZ鍛造式鎂合金輪圈</li>
+                            <li>剎車卡鉗: Brembo</li>
+                            <li>電子系統: FIA SECU標準配子控制系統</li>
+                            <li>變速箱: 8前速序列式半自動碳纖維外殼變速箱</li>
+
+                        </ul>
+                    </div>
+                </div>
+                <div class="f1-car-3" class="car-image">
+                    <div class="f1-car-pic"></div>
+                    <div class="f1-car-text">
+                        <ul>
+                            <h1>2020 F1 季軍</h1>
+                            <h2>麥拉倫F1車隊</h2>
+                            <li>高度: 950 mm</li>
+                            <li>寬度: 2000 mm</li>
+                            <li>車重: 746 公斤</li>
+                            <li>車身編號: MCL35</li>
+                            <li>引擎: Renault E-Tech 20</li>
+                            <li>排氣量: 1600 cc</li>
+                            <li>車體結構: 碳纖維單體式車身</li>
+                            <li>前懸吊系統: 碳纖維雙A臂結構+推桿式懸吊+扭力桿彈簧+防傾桿</li>
+                            <li>後懸吊系統: 碳纖維雙A臂結構+拉桿式懸吊+扭力桿彈簧+防傾桿</li>
+                            <li>輪圈: Enkei</li>
+                            <li>剎車卡鉗: Akebono</li>
+                            <li>電子系統: McLaren Applied Technology</li>
+                            <li>變速箱: 8前速序列式半自動碳纖維外殼變速箱</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+        <div class="container">
+            <div id="link-ankor-3"></div>
+            <div class="driver">
+                <div class="f1-driver-1">
+                    <div class="f1-driver-pic"></div>
+                    <div class="f1-driver-text">
+                        <ul>
+                            <h2>路易斯·漢米爾頓 Lewis Hamilton</h2>
+                            <li>國籍: 英國</li>
+                            <li>生日: 1985年1月7日</li>
+                            <li>車號: 44</li>
+                            <li>世界冠軍: 7個（2008、2014、2015、2017、2018、2019、2020）與麥可·舒馬克並列第一</li>
+                            <li>分站冠軍: 96場 超越麥可·舒馬克91場分站冠軍</li>
+                            <li>生涯積分：3803分</li>
+                            <li>桿位：98場</li>
+                            <li>最快圈速：53場</li>
+                            <li>2020年排名：第1（347分）　</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="f1-driver-2">
+                    <div class="f1-driver-pic"></div>
+                    <div class="f1-driver-text">
+                        <ul>
+                            <h2>維爾特利·鮑達斯 Valtteri Bottas</h2>
+                            <li>國籍: 芬蘭</li>
+                            <li>生日: 1989年8月28日</li>
+                            <li>車號: 77</li>
+                            <li>世界冠軍: 0個</li>
+                            <li>分站冠軍: 9場 </li>
+                            <li>生涯積分：1528分</li>
+                            <li>桿位：16場</li>
+                            <li>最快圈速：16場</li>
+                            <li>2020年排名：第2（223分）　</li>
+                        </ul>
+                    </div>
+
+                </div>
+
+            </div>
+        </div>
+
+
+        <div class="calendar parallax">
+            <div id="link-ankor-4"></div>
+        </div>
+
+    </main>
+
+    <footer>
+        <div class="footer-up">
+            <div class="footer-left">
+                <div id="line" class="footer-icon"></div>
+                <div id="FB" class="footer-icon"></div>
+                <div id="IG" class="footer-icon"></div>
+
+            </div>
+            <div class="footer-right">
+                <ul>
+                    <li>作者: 盧禹勝 Louis Lu</li>
+                    <li>Phone: +886-933036345</li>
+                    <li>E-mail: luislu5628@gmail.com</li>
+                </ul>
+            </div>
+        </div>
+        <div class="footer-down">
+            <h4>@Copyright 盧禹勝 Louis Lu</h4>
+        </div>
+    </footer>
+
+
+
+
+
+
+</body>
+
+</html>

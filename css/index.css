@@ -1,4 +1,13 @@
-.banner .banner-img {
-  background-image: url(/);
+.container .links {
+  margin-left: 100px;
+}
+
+.container .links .link {
+  padding: 10px 0;
+}
+
+.container .links .link img {
+  width: 500px;
+  height: auto;
 }
 /*# sourceMappingURL=index.css.map */

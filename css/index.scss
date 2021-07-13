@@ -1,11 +1,28 @@
 .banner{
     .banner-img{
-        background-image: url(/img/2021-05-05-Matte\ Painting-03-盧禹勝.jpg);
-        background-position: center;
-        background-size: cover;
-        background-repeat: no-repeat;
-        width: 100vw;
-        height: 300px;
+        // background-image: url(/img/Banner.jpg);
+        // background-position: center;
+        // background-size: cover;
+        // background-repeat: no-repeat;
+        // width: 1366px;
+        // height: 100%;
 
     }
+}
+
+.container{
+
+    .links{
+        margin-left: 100px;
+
+        .link{
+            padding: 10px 0;
+
+            img{
+                width: 500px;
+                height: auto;
+            }
+        }
+    }
+
 }
