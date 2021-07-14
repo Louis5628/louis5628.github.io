@@ -1,12 +1,37 @@
-.container .links {
+.container .resume {
+  padding: 150px 0px 50px;
+}
+
+.container .frontend {
+  padding: 0px 50px;
+}
+
+.container .frontend .links {
   margin-left: 100px;
 }
 
-.container .links .link {
+.container .frontend .links .link {
   padding: 10px 0;
 }
 
-.container .links .link img {
+.container .frontend .links .link img {
+  width: 500px;
+  height: auto;
+}
+
+.container .adobe {
+  padding: 50px 50px;
+}
+
+.container .adobe .links {
+  margin-left: 100px;
+}
+
+.container .adobe .links .link {
+  padding: 10px 0;
+}
+
+.container .adobe .links .link img {
   width: 500px;
   height: auto;
 }

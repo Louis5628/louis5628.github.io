@@ -1,28 +1,46 @@
-.banner{
-    .banner-img{
-        // background-image: url(/img/Banner.jpg);
-        // background-position: center;
-        // background-size: cover;
-        // background-repeat: no-repeat;
-        // width: 1366px;
-        // height: 100%;
 
-    }
-}
 
 .container{
 
-    .links{
-        margin-left: 100px;
+    .resume{
+        padding: 150px 0px 50px;
 
-        .link{
-            padding: 10px 0;
+        
+    }
 
-            img{
-                width: 500px;
-                height: auto;
+    .frontend{
+        padding: 0px 50px;
+
+        .links{
+            margin-left: 100px;
+    
+            .link{
+                padding: 10px 0;
+    
+                img{
+                    width: 500px;
+                    height: auto;
+                }
             }
         }
     }
+
+    .adobe{
+        padding: 50px 50px;
+
+        .links{
+            margin-left: 100px;
+    
+            .link{
+                padding: 10px 0;
+    
+                img{
+                    width: 500px;
+                    height: auto;
+                }
+            }
+        }
+    }
+
 
 }
